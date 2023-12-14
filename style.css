@@ -1,0 +1,62 @@
+body{
+  font-family: Arial, sans-serif;
+  background-image: url('img/letras.jpg');
+  background-repeat: no-repeat;
+  background-size: 1400px 700px, auto, 150px; 
+}
+
+#contenedor{
+  width: 650px;
+  height: 300px;
+  text-align: center;
+  position: absolute;
+  inset: 0;
+  margin: auto;
+}
+
+h1{
+  text-align: center;
+  margin-top: 50px;
+}
+     
+#guess-input {
+  display: block;
+  margin: 0 auto 20px;
+  padding: 10px;
+  font-size: 18px;
+  width: 250px;
+  border: 1px solid #ccc;
+}
+     
+#guess-button {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #424949;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+}
+     
+button:active {
+  transform: scale(0.95);
+}
+     
+.letter {
+  border: 1px solid black;
+  padding: 3px;
+  margin: 3px;
+  min-width: 20px;
+  text-align: center;
+  display: inline-block;
+}
+     
+.row{
+  margin-bottom: 10px;
+}
+     
+.input-area{
+  margin: 30px;
+}
+ 
