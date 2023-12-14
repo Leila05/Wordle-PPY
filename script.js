@@ -3,14 +3,13 @@ const INPUT = document.getElementById('guess-input');
 BUTTON.addEventListener('click', intentar);
 
 let intentos = 3;
-let palabras = ["VERDE", "CABRA", "CAMPO", "DADOS", "ERROR", "GAFAS", "IDEAS"];//comentar esta linea para utilizar la API.
-let indiceAleat = Math.floor(Math.random() * palabras.length);//comentar esta linea para utilizar la API.
-let palabra = palabras[indiceAleat];//comentar esta linea para utilizar la API.
-console.log(palabra);//comentar esta linea para utilizar la API.
+/*let palabras = ["VERDE", "CABRA", "CAMPO", "DADOS", "ERROR", "GAFAS", "IDEAS"];
+let indiceAleat = Math.floor(Math.random() * palabras.length);
+let palabra = palabras[indiceAleat];
+console.log(palabra);*/
 
-//Descomentar para utilizar la API.
 //Función para remover acentos de las palabras.
-/*const removeAccents = (str) => {
+const removeAccents = (str) => {
     return str.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
 } 
 
@@ -26,7 +25,7 @@ fetch(UrlApi).then(response => response.json()).then(response =>{
     let indiceAleat = Math.floor(Math.random() * palabras.length);
     let palabra = palabras[indiceAleat];
     console.log(palabra);
-})*/
+})
 
 INPUT.addEventListener("keyup", function (e) {
     if (e.code === 'Enter') {
